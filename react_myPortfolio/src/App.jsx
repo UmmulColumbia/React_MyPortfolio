@@ -14,7 +14,7 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <Router>
+    
       <div>
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         <main className="mx-3">
@@ -28,7 +28,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
+   
   );
 }
 
