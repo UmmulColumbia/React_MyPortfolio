@@ -19,8 +19,7 @@ function App() {
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         <main className="mx-3">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
