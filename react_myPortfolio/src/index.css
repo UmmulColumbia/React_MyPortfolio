@@ -14,6 +14,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,17 +32,42 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
+header, main, footer {
+  width: 100%;
+  padding: 1em;
+}
+header {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  background: url('./assets/headerBackground.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 8px;
+}
+header h1 {
+
+  
+  margin-right: 6em; /* Add right margin to create space */
+}
+main {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 2.2em;
+  margin: 0.67em 0;
 }
 
 button {
@@ -55,6 +89,81 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+footer {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  text-align: center;
+}
+
+footer p {
+  margin: 0.5em 0;
+}
+
+footer a {
+  margin: 0 1em;
+  color: #646cff;
+}
+footer a:hover {
+  color: #535bf2;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: right;
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 1em;
+  background-size: cover;
+  
+}
+
+.nav-item {
+  margin: 0 1em;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.nav-link.active {
+  background-color: #535bf2;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: #646cff;
+  color: white;
+}
+
+.project {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project a {
+  display: block;
+  color: #646cff;
+  margin: 0.5em 0;
+}
+
+.project a:hover {
+  color: #535bf2;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,5 +174,37 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+  footer {
+    background-color: #f1f1f1;
+    color: #213547;
+  }
+  footer a {
+    color: #213547;
+  }
+  footer a:hover {
+    color: #747bff;
+  }
+  .nav-link {
+    color: #213547;
+  }
+  .nav-link.active {
+    background-color: #747bff;
+    color: white;
+  }
+  .nav-link:hover {
+    background-color: #646cff;
+    color: white;
+  }
+  .project {
+    background-color: #f9f9f9;
+    border-color: #ddd;
+    color: #213547;
+  }
+  .project a {
+    color: #213547;
+  }
+  .project a:hover {
+    color: #747bff;
   }
 }

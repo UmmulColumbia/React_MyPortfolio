@@ -1,10 +1,16 @@
+
 import React from 'react';
+import './Home.css'; // Import CSS for styling
 
 function Home() {
   return (
-    <div>
-      <h2>Home</h2>
-      <p>Welcome to my portfolio website!</p>
+    <div className="home-container">
+      <div className="home-content">
+        <h1>Ummul Mukta</h1>
+      </div>
+      <div className="home-image">
+        <img src="./assets/your-photo.jpg" alt="Your Name" />
+      </div>
     </div>
   );
 }

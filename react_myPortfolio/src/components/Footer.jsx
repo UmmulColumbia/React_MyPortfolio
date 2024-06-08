@@ -5,10 +5,10 @@ function Footer() {
   return (
     <footer>
       <p>Connect with me on:</p>
-      {/* GitHub link */}
-      <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">GitHub</a>
-      {/* LinkedIn link */}
-      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+     
+      <a href="https://github.com/UmmulColumbia?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <br /> {/* Line break to separate the links */}
+      <a href="https://www.linkedin.com/in/ummulomukta/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </footer>
   );
 }
