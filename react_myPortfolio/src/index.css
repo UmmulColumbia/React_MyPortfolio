@@ -34,7 +34,7 @@ a:hover {
 
 header, main, footer {
   width: 100%;
-  padding: 1em;
+ /* padding: 1em;*/
 }
 header {
   display: flex;
@@ -44,7 +44,7 @@ header {
   padding: 1em;
   background: url('./assets/headerBackground.jpg') no-repeat center center;
   background-size: cover;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 header h1 {
 

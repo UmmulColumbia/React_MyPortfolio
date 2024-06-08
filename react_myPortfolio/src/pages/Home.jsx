@@ -9,7 +9,7 @@ function Home() {
         <h1>Ummul Mukta</h1>
       </div>
       <div className="home-image">
-        <img src="./assets/your-photo.jpg" alt="Your Name" />
+        <img src="../assets/selfImage.jpg" alt="Your Name" />
       </div>
     </div>
   );

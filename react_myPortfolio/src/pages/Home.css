@@ -2,13 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2em;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color with some transparency */
-    border-radius: 8px;
-    height: 300px;
-    background: url('../assets/header_background.jpg') no-repeat center center;
+    height: 450px;
+    background: url('../assets/imageBody.jpg') no-repeat center center;
     background-size: cover;
+    border-radius: 2px;
+    margin-left: 0;
   }
   
   .home-content {
@@ -16,14 +15,56 @@
     text-align: left;
   }
   
-  .home-image {
-    flex: 1;
+  
+  
+
+  /*img{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    justify-content: bottom;
+    overflow: hidden;
+    background-color: white; /* Optional: Set a background color for any empty space */
+   
+   /* align-items: center;
+  justify-content: center;
+  
+   
+    object-fit: cover; /* Ensure the entire image fits within the container */
+   /* object-position: center; /* Center the image within the container */
+   
+  
+  
+  .about-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
   }
   
-  .home-image img {
-    max-width: 150px;
-    border-radius: 50%;
+ 
+  
+ img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Ensure circular shape */
+    margin-right: 200px; /* Reasonable space between image and text */
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+  justify-content: center;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .text-container h3,
+  .text-container p {
+  
+    text-align: left;
+    margin-right: 200px;
   }
   
