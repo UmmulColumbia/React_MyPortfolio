@@ -20,16 +20,16 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--background-color);
-  color: var(--color);
+  /*color: var(--color);*/
+  color: whitesmoke;
 }
-
 a {
   font-weight: 500;
-  color: #646cff;
+  color:#3a5d7c;;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #535bf24b;
 }
 
 header, main, footer {
@@ -50,6 +50,8 @@ header h1 {
 
   
   margin-right: 6em; /* Add right margin to create space */
+ 
+  color: rgb(44, 39, 39)
 }
 main {
   flex: 1; /* Take up remaining space */
@@ -57,6 +59,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #3a5d7c;
 }
 
 h1 {
@@ -82,7 +85,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #3a5d7c;;
 }
 button:focus,
 button:focus-visible {
@@ -131,12 +134,12 @@ footer a:hover {
 }
 
 .nav-link.active {
-  background-color: #535bf2;
+  background-color: #3a5d7c;;
   color: white;
 }
 
 .nav-link:hover {
-  background-color: #646cff;
+  background-color: #3a5d7c;;
   color: white;
 }
 
@@ -147,11 +150,20 @@ footer a:hover {
   margin: 1em 0;
   background-color: #1a1a1a;
   color: rgba(255, 255, 255, 0.87);
+ 
 }
 
 .project img {
-  max-width: 100%;
-  border-radius: 8px;
+  width: 100%; /* Ensure the image takes up the full width of the container */
+
+  max-width: 400px; /* Set a maximum width */
+  max-height: 300px; /* Set a maximum height */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Adjust the border radius if needed */
+  object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+  object-position: center; /* Center the image within the container */
+  margin-bottom: 16px
+  
 }
 
 .project a {
@@ -163,6 +175,27 @@ footer a:hover {
 .project a:hover {
   color: #535bf2;
 }
+
+/* Projects.css */
+.projects-container {
+  display: grid;
+  justify-content: center; /* Center the grid items */
+  grid-template-columns: repeat(2, 1fr); /* Create two columns */
+  gap: 16px; /* Space between grid items */
+  padding: 16px;
+}
+.social-logo {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  margin-right: 8px; /* Space between the logo and the text */
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
