@@ -34,6 +34,9 @@ Open your browser and navigate to http://localhost:3000 to view the application.
 ## Deployment
 This application is deployed on Netlify. You can view the live site here.
 
+https://ummulomuktaportfolio.netlify.app/
+
+
 ## Features
 
 - Single Page Application (SPA): The application is built as a SPA using React.
