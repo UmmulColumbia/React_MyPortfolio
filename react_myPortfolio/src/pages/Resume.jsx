@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resume.css';
-import resume from '../assets/Resume_UmmulMukta.pdf'; 
+import resume from '../assets/Resume_UmmulMukta.docx'; 
 
 function Resume() {
   return (
